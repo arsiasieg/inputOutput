@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MagicOvenComponent } from './magic-oven.component';
+import { DeveloperComponent } from './developer.component';
 
-describe('MagicOvenComponent', () => {
-  let component: MagicOvenComponent;
-  let fixture: ComponentFixture<MagicOvenComponent>;
+describe('DeveloperComponent', () => {
+  let component: DeveloperComponent;
+  let fixture: ComponentFixture<DeveloperComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MagicOvenComponent ]
+      declarations: [ DeveloperComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MagicOvenComponent);
+    fixture = TestBed.createComponent(DeveloperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

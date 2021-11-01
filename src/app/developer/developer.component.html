@@ -7,9 +7,7 @@
 <p>Skills :</p>
 <div class="row">
     <app-skill
-    *ngFor="let skill of developer.skills"
-    [skillName]="skill.name"
-    [skillLogo]="skill.logo"
-    [skillSite]="skill.site"
+    *ngFor="let skills of developer.skills"
+    [skill]="skills"
     ></app-skill>
 </div>

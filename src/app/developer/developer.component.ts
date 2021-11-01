@@ -9,7 +9,7 @@ import { Skill } from '../common/skill.model';
 })
 export class DeveloperComponent implements OnInit {
 
-  developer: Developer
+  public developer: Developer
 
   constructor() {
     this.developer = new Developer("Lucas", 

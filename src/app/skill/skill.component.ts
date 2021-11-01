@@ -9,7 +9,7 @@ import { Skill } from '../common/skill.model';
 export class SkillComponent implements OnInit {
 
 
-  @Input() public skill: any
+  @Input() public skill: Skill|undefined
   
 
   constructor() {

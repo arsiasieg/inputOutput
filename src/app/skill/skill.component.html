@@ -1,5 +1,10 @@
-<ul>
+<ul *ngIf="skill !== undefined; else noSkill" >
     <img src="{{skill.logo}}" style="width: auto; height: 50px;">
     <li>Name : {{skill.name}}</li>
     <li>Site : <a href="{{skill.site}}">{{skill.site}}</a></li>
 </ul>
+<ng-template #noSkill>
+    <div>
+        No skill (for that moment).
+    </div>
+</ng-template>

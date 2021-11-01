@@ -1,5 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { EventEmitter } from 'stream';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-magic-oven',
@@ -14,7 +13,7 @@ export class MagicOvenComponent implements OnInit {
   @Input() sugar: number|undefined
   @Input() egg: number|undefined
 
-  @Output() getCookies:EventEmitter<any> = new EventEmitter(); 
+  @Output() getCookies:EventEmitter<number> = new EventEmitter<number>(); 
 
   sendCookies(){
     this.getCookies.emit(this.numberOfCookies)

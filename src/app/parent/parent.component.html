@@ -1,0 +1,10 @@
+<div *ngIf="listPosts.length > 0; else noPosts>">
+    <div *ngFor="let post of listPosts">
+        <app-child [postChild] = "post"></app-child>
+    </div>
+</div>
+
+<ng-template #noPosts>
+    Pas de posts dispo
+</ng-template>
+

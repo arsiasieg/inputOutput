@@ -1,7 +1,7 @@
-##Check the different branch to find the right challenge
+## Check the different branch to find the right challenge
 
-InputOutput quest --> master
-Input challenge --> inputChallenge
-Output challenge --> outputChallenge
+InputOutput quest -> master<br>
+Input challenge -> inputChallenge<br>
+Output challenge -> outputChallenge<br>
 
 

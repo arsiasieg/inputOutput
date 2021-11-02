@@ -13,7 +13,6 @@ export class AppComponent {
   }
 
   onReceiveNewOnomatopia($event:string){
-    console.log($event)
     this.onomatopoeias.push($event)
   }
 }

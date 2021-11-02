@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { KitchenComponent } from './kitchen/kitchen.component';
-import { MagicOvenComponent } from './magic-oven/magic-oven.component';
+import { CreateOnomatopiaComponent } from './create-onomatopia/create-onomatopia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KitchenComponent,
-    MagicOvenComponent
+    CreateOnomatopiaComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     FormsModule
   ],
   providers: [],

@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'inputOutput';
+  onomatopoeias: string[]
+
+  constructor(){
+    this.onomatopoeias = ["Bam"]
+  }
+
+  onReceiveNewOnomatopia($event:string){
+    console.log($event)
+    this.onomatopoeias.push($event)
+  }
 }

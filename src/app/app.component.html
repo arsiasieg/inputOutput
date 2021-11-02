@@ -1,1 +1,4 @@
-<app-kitchen></app-kitchen>
+<app-create-onomatopia (sendOnomatopiaToParent) = "onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+<div *ngFor="let onomatopia of onomatopoeias">
+    {{onomatopia}}
+</div>

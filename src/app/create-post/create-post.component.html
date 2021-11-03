@@ -1,0 +1,16 @@
+<form (ngSubmit)="postForm.valid && createPosts()" [formGroup]="createPostForm" #postForm = "ngForm">
+    <label for="author">
+        Author :
+    </label>
+    <input type="text" name="author" formControlName="author">
+    <label for="imageUrl">
+        Image URL :
+    </label>
+    <input type="text" name="imageUrl" formControlName="imageUrl">
+    <label for="text">
+        Text :
+    </label>
+    <input type="text" name="text" formControlName="text">
+    <button type="submit">Send</button>
+    <button type="reset">Reset</button>
+</form>

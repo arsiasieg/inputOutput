@@ -1,5 +1,5 @@
-<div *ngIf="postChild !== undefined">
-    {{postChild.text}}
-    {{postChild.imageUrl}}
-    {{postChild.author}}
+<div *ngIf="postChild !== undefined" class="post">
+    <img src="{{postChild.imageUrl}}" alt="{{postChild.imageUrl}}">
+    <h3>{{postChild.author}}</h3>
+    <p>{{postChild.text}}</p>
 </div>

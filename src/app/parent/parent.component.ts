@@ -21,4 +21,9 @@ export class ParentComponent implements OnInit {
     new Post("let's go !", "image2", "Sandra Doe"))
    }
 
+  //Ajouter un post
+   addPost(post: Post){
+    this.listPosts.push(post)
+   }
+
 }

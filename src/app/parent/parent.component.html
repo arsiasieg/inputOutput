@@ -1,4 +1,4 @@
-<div *ngIf="listPosts.length > 0; else noPosts>">
+<div *ngIf="listPosts.length > 0; else noPosts">
     <div *ngFor="let post of listPosts">
         <app-child [postChild] = "post"></app-child>
     </div>
@@ -8,3 +8,5 @@
     Pas de posts dispo
 </ng-template>
 
+
+<app-create-post (createPost)="addPost($event)"></app-create-post>

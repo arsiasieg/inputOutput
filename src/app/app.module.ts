@@ -3,14 +3,14 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { KitchenComponent } from './kitchen/kitchen.component';
-import { MagicOvenComponent } from './magic-oven/magic-oven.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KitchenComponent,
-    MagicOvenComponent
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
